@@ -1,0 +1,17 @@
+package lab02;
+
+public class Program {
+
+	public static void main(String[] args) {
+//		int age = 23, house_no = 123;
+//		String name = "Alex", street = "Fake Street", post_code = "AB12 3CD", telephone_no = "00000000000", company = "AXA";
+//		double salary = 24000;
+//		boolean driving_licence = true;
+//		System.out.println(post_code);
+		
+		int number = 5;
+		
+		System.out.println("Initial Value: " + number * 2 );
+	}
+
+}

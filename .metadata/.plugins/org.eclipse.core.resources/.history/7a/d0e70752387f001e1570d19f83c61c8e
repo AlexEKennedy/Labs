@@ -1,0 +1,21 @@
+package lab08;
+
+import lab09.Map;
+
+public class Token {
+	private int x;
+	private int y;
+	Map map = new Map(0,0);
+	public int getx() {
+		return x;
+	}
+	public int gety() {
+		return y;
+	}
+	public void setx(int input) {
+		this.x = input;
+	}
+	public void sety(int input) {
+		this.y = input;
+	}
+}

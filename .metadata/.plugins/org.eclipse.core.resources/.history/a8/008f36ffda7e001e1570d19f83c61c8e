@@ -1,0 +1,15 @@
+package lab05;
+
+import java.util.Scanner;
+
+public class Lab5 {
+	Scanner scanner = new Scanner(System.in);
+    public static int getInt(String prompt, Scanner scanner) {
+        System.out.println(prompt);
+        int result = scanner.nextInt();
+        return result; 
+    }
+    public void grades() {
+    	int mark = getInt("Enter your mark ")
+    }
+}

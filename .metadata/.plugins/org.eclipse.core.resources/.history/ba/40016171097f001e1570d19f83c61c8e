@@ -1,0 +1,37 @@
+package lab08;
+
+import java.util.Scanner;
+
+public class Account {
+	int id;
+	String owner;
+	double balance;
+	void deposit(double amount) {
+		if (amount < 0) {
+			System.out.println("Invalid amount");
+		}
+	}
+	void withdraw(double amount) {
+		if (amount > balance) {
+			System.out.println("You may only withdraw up to the amount in your balance");
+		}
+	}
+	public Account() {
+	id = 0;
+	owner = null;
+	balance = 0.0;
+	}
+	
+    public static int getInt(String prompt, Scanner scanner) {
+        System.out.println(prompt);
+        int result = scanner.nextInt();
+        return result; 
+    }
+    
+    public static String getString(String prompt, Scanner scanner) {
+        System.out.println(prompt);
+        String result = scanner.nextLine();
+        return result;
+    }
+}
+

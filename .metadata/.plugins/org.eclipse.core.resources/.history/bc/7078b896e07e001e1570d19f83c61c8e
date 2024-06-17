@@ -1,0 +1,51 @@
+package lab06;
+
+import java.util.Scanner;
+
+public class Lab6 {
+	Scanner scanner = new Scanner(System.in);
+    public static int getInt(String prompt, Scanner scanner) {
+        System.out.println(prompt);
+        int result = scanner.nextInt();
+        return result; 
+    }
+    public static String getString(String prompt, Scanner scanner) {
+        System.out.println(prompt);
+        String result = scanner.nextLine();
+        return result;
+    }
+    public void grades() {
+    	String[] names = new String[5];
+    	int[] marks = new int[5];
+		for (int i = 0; i < 5; i++) {
+			getString("Enter a name", scanner);
+			names[i] = scanner.nextLine();
+			scanner.nextLine();
+			getInt("Enter a marks[i]", scanner);
+			scanner.nextLine();
+			marks[i] = scanner.nextInt();
+    	String result = "";
+    	if (marks[i] < 1 || marks[i] > 100) {
+    		result = "Error: marks[i]s must be between 1 and 100";
+    	}
+    	else if (marks[i] < 50) {
+    		result = "Fail";
+    	}
+    	else if (marks[i] < 61) {
+    		result = "Pass";
+    	}
+    	else if (marks[i] < 71) {
+    		result = "Merit";
+    	}
+    	else {
+    		result = "Distinction";
+    	}
+    	for (int j = 0; j < 5; j++) {
+    	System.out.printf("%s: %d result: %s\n", names[j], marks[j], result);
+    	}
+		}
+    }
+    public void part1() {
+    	grades();
+    }
+}

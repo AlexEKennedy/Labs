@@ -1,0 +1,12 @@
+package lab08;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Account alexsAccount = new Account(1234, 1000, "Alex");
+		System.out.println(alexsAccount.getDetails());
+		alexsAccount.withdraw(19999);
+		System.out.println(alexsAccount.getBalance());
+	}
+
+}

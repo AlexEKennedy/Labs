@@ -1,0 +1,19 @@
+package lab04;
+
+import java.util.Scanner;
+
+public class Lab4 {
+	Scanner scanner = new Scanner(System.in);
+    public static int getInt(String prompt, Scanner scanner) {
+        System.out.println(prompt);
+        int result = scanner.nextInt();
+        return result; 
+    }
+	public void part1() {
+		int price = getInt("Price of a bag please?", scanner);
+		int money = getInt("How much money do you have?", scanner);
+		int numBag = money / price;
+		System.out.println("If the price is " + price + "p and you have " + money + "p then you will be able to buy " + numBag + " bags");
+	}
+
+}

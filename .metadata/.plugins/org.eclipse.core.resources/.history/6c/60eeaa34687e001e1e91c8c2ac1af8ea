@@ -1,0 +1,23 @@
+package lab03;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int intResult = getInt("Enter a number", scanner);
+		scanner.nextLine();
+		String strResult = getString("Enter a string", scanner);
+		System.out.println(intResult);
+		System.out.println(strResult);
+	}
+	public static int getInt(String prompt, Scanner scanner) {
+		Scanner s = new Scanner(System.in);
+		return s.nextInt();
+	}
+	public static String getString(String prompt, Scanner scanner) {
+		Scanner s = new Scanner(System.in);
+		return s.next();
+	}
+}
